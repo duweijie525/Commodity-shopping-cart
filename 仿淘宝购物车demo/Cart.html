@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>购物车页面</title>
+  <link href="css/myCart.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="header">
+    <img src="images/taobao_logo.gif" alt="logo" />
+  </div>
+
+  <div id="nav">
+    您的位置：
+    <a href="#">首页</a> >
+    <a href="#">我的淘宝</a> >
+    我的购物车
+  </div>
+
+  <div id="navlist">
+    <ul>
+      <li class="navlist_red_left"></li>
+      <li class="navlist_red">1. 查看购物车</li>
+      <li class="navlist_red_arrow"></li>
+      <li class="navlist_gray">2. 确认订单信息</li>
+      <li class="navlist_gray_arrow"></li>
+      <li class="navlist_gray">3. 付款到支付宝</li>
+      <li class="navlist_gray_arrow"></li>
+      <li class="navlist_gray">4. 确认收货</li>
+      <li class="navlist_gray_arrow"></li>
+      <li class="navlist_gray">5. 评价</li>
+      <li class="navlist_gray_right"></li>
+    </ul>
+  </div>
+
+  <div id="content">
+    <table width="100%" cellspacing="0" cellpadding="0" id="shopping">
+      <form action="" method="post" name="myform">
+        <tr>
+          <td class="title_1">
+            <input id="allCheckBox" type="checkbox" />
+            全选
+          </td>
+          <td class="title_2" colspan="2">店铺宝贝</td>
+          <td class="title_3">获积分</td>
+          <td class="title_4">单价（元）</td>
+          <td class="title_5">数量</td>
+          <td class="title_6">小计（元）</td>
+          <td class="title_7">操作</td>
+        </tr>
+        <tr>
+          <td colspan="8" class="line"></td>
+        </tr>
+        <tr>
+          <td colspan="8" class="shopInfo">
+            店铺：<a href="#">纤巧百媚时尚鞋坊</a>
+            卖家：<a href="#">纤巧百媚</a>
+            <img src="images/taobao_relation.jpg" alt="relation" />
+          </td>
+        </tr>
+
+        <tr id="product1">
+          <td class="cart_td_1">
+            <input name="cartCheckBox" type="checkbox" value="product1" />
+          </td>
+          <td class="cart_td_2">
+            <img src="images/taobao_cart_01.jpg" alt="shopping" />
+          </td>
+          <td class="cart_td_3">
+            <a href="#">
+              日韩流行风时尚美眉最爱独特米字拼图金属坡跟公主靴子黑色
+            </a><br />
+            颜色：棕色 尺码：37<br />
+            保障：<img src="images/taobao_icon_01.jpg" alt="icon" />
+          </td>
+          <td class="cart_td_4">5</td>
+          <td class="cart_td_5">138.00</td>
+          <td class="cart_td_6">
+            <img src="images/taobao_minus.jpg" name="jian" class="hand" />
+            <input name="num" type="text" value="1" class="num_input" readonly="readonly" id="text"/>
+            <img src="images/taobao_adding.jpg" name="add" class="hand" />
+          </td>
+          <td class="cart_td_7"></td>
+          <td class="cart_td_8"><a href="javascript:;" name="del">删除</a></td>
+        </tr>
+
+        <tr>
+          <td colspan="8" class="shopInfo">店铺：<a href="#">香港我的美丽日记</a> 卖家：<a href="#">lokemick2009</a> <img src="images/taobao_relation.jpg"
+              alt="relation" /></td>
+        </tr>
+
+
+        <tr id="product2">
+          <td class="cart_td_1">
+            <input name="cartCheckBox" type="checkbox" value="product2" />
+          </td>
+          <td class="cart_td_2">
+            <img src="images/taobao_cart_02.jpg" alt="shopping" />
+          </td>
+          <td class="cart_td_3">
+            <a href="#">chanel/香奈尔/香奈尔炫亮魅力唇膏3.5g</a><br />
+            保障：<img src="images/taobao_icon_01.jpg" alt="icon" />
+            <img src="images/taobao_icon_02.jpg" alt="icon" />
+          </td>
+          <td class="cart_td_4">12</td>
+          <td class="cart_td_5">265.00</td>
+          <td class="cart_td_6">
+            <img src="images/taobao_minus.jpg" name="jian" class="hand" id="sub"/>
+            <input name="num" type="text" value="1" class="num_input" readonly="readonly" />
+            <img src="images/taobao_adding.jpg" name="add" class="hand" id="add"/>
+          </td>
+          <td class="cart_td_7"></td>
+          <td class="cart_td_8">
+            <a href="javascript:;" name="del">删除</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="8" class="shopInfo">
+            店铺：<a href="#">实体经营</a>
+            卖家：<a href="#">林颜店铺</a>
+            <img src="images/taobao_relation.jpg" alt="relation" />
+          </td>
+        </tr>
+
+        <tr id="product3">
+          <td class="cart_td_1">
+            <input name="cartCheckBox" type="checkbox" value="product3" />
+          </td>
+          <td class="cart_td_2">
+            <img src="images/taobao_cart_03.jpg" alt="shopping" />
+          </td>
+          <td class="cart_td_3">
+            <a href="#">蝶妆海晳蓝清滢粉底液10#（象牙白）</a><br />
+            保障：
+            <img src="images/taobao_icon_01.jpg" alt="icon" />
+            <img src="images/taobao_icon_02.jpg" alt="icon" />
+          </td>
+          <td class="cart_td_4">3</td>
+          <td class="cart_td_5">85.00</td>
+          <td class="cart_td_6">
+            <img src="images/taobao_minus.jpg" name="jian" class="hand" />
+            <input name="num" type="text" value="1" class="num_input" readonly="readonly" />
+            <img src="images/taobao_adding.jpg" name="add" class="hand" />
+          </td>
+          <td class="cart_td_7"></td>
+          <td class="cart_td_8">
+            <a href="javascript:;" name="del">删除</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="8" class="shopInfo">
+            店铺：
+            <a href="#">红豆豆的小屋</a>
+            卖家：
+            <a href="#">taobao豆豆</a>
+            <img src="images/taobao_relation.jpg" alt="relation" />
+          </td>
+        </tr>
+
+        <tr id="product4">
+          <td class="cart_td_1">
+            <input name="cartCheckBox" type="checkbox" value="product4" />
+          </td>
+          <td class="cart_td_2">
+            <img src="images/taobao_cart_04.jpg" alt="shopping" />
+          </td>
+          <td class="cart_td_3">
+            <a href="#">相宜促销专供 大S推荐 最好用的LilyBell化妆棉</a><br />
+            保障：<img src="images/taobao_icon_01.jpg" alt="icon" />
+          </td>
+          <td class="cart_td_4">
+            12
+          </td>
+          <td class="cart_td_5">
+            12.00
+          </td>
+          <td class="cart_td_6">
+            <img src="images/taobao_minus.jpg" name="jian" class="hand" />
+            <input name="num" type="text" value="2" class="num_input" readonly="readonly" />
+            <img src="images/taobao_adding.jpg" name="add" class="hand" />
+          </td>
+          <td class="cart_td_7"></td>
+          <td class="cart_td_8">
+            <a href="javascript:;" name="del">删除</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="3">
+            <a href="javascript:;" id="deleteSelectRow">
+              <img src="images/taobao_del.jpg" alt="delete" id="del" />
+            </a>
+          </td>
+          <td colspan="5" class="shopend">
+            商品总价（不含运费）：
+            <label id="total" class="yellow">110</label>
+            元<br />
+            可获积分：
+            <label class="yellow" id="integral">10</label>
+            点<br />
+            <input name=" " type="image" src="images/taobao_subtn.jpg" />
+          </td>
+        </tr>
+      </form>
+    </table>
+  </div>
+
+</body>
+<script type="text/javascript">
+				//全选按钮
+			var allches = document.getElementById('allCheckBox');
+			//里面的每个按钮
+			var ches = document.getElementsByName("cartCheckBox");
+			//删除所选 按钮
+			var del = document.getElementById('deleteSelectRow');
+			//  +
+			var add = document.getElementsByName("add");
+			//  -  sub是减
+			var sub = document.getElementsByName("jian");
+			//获取总价
+			var total = document.getElementById('total');
+			//删除一行
+			var deltd = document.getElementsByName("del");
+			//获取到tr的标签
+			var trs = document.getElementsByTagName("tr");
+			//全选部分代码
+			allches.onclick = function(){
+				 for(var i = 0;i<ches.length;i++){
+					 ches[i].checked = allches.checked;
+				 }
+			}
+			//删除全选部分代码
+ 			del.onclick = function(){
+				//全选删除的循环要等于长度减一,要大于等于0,递减
+ 				 for(var i=ches.length-1;i>=0;i--){
+ 					if(ches[i].checked == true){
+ 						var first = ches[i].parentNode.parentNode.rowIndex;
+ 						// var two = first.previousElementSibling;
+ 						// two.parentNode.deleteRow(two);
+ 						document.getElementById("shopping").deleteRow(first);
+						document.getElementById("shopping").deleteRow(first-1);
+
+							productCount();
+ 					}
+					//当删除所选后全选按钮不被选中
+					if(allches.checked){
+						allches.checked =false;
+					}
+ 				}
+ 			}
+			//点击增加数量的代码
+			for(var a = 0;a<add.length;a++){
+			add[a].onclick = function(){
+				//parentNode获取的是当前元素的直接父元素
+				//children来获取子节点
+				var ipt = this.parentNode.children[1];
+				// console.log(ipt)
+				ipt.value++;
+				 // console.log(ipt.value[0]);
+				// total.innerHTML=parseInt(ipt.value)*133;
+				productCount();
+		}
+		}
+			//点击减少数量代码
+			for(var b= 0;b<sub.length;b++){
+			sub[b].onclick = function(){
+				//nextSibling获取下一个兄弟节点
+				var inj = this.nextSibling.nextSibling;
+				if (inj.value<=1) {
+					alert("宝贝的数量必须是大于0的");
+				} else{
+					inj.value = parseInt(inj.value)-1;
+				}
+				productCount();
+			}
+			}
+			
+			//计算总价
+			function productCount(){
+			var total = 0;//商品金额总计
+			var intergral = 0;//可获得的商品总积分
+			var point ;//每一行商品的单品积分
+
+			var price;//商品的单价
+			var number;//商品数量
+			var subtotal;//商品小计
+	
+		// 获取表格中的行
+		var tabTr = document.getElementById("shopping").getElementsByTagName("tr");
+		//当购物车里面有商品才需要计算总价和积分
+		if(tabTr.length>2){
+			for(var i =3;i<tabTr.length;i=(i+2)){
+				//获取行里的所有单元格
+				var tds = tabTr[i].getElementsByTagName("td"); 
+				
+				point = tds[3].innerHTML; //每一行商品的单品积分
+				price = tds[4].innerHTML; //每一行商品的单价
+				number = tds[5].getElementsByTagName("input")[0].value;//商品数量
+
+				intergral += point*number;//可获得的商品总积分
+				total += price*number;//商品金额总计
+				subtotal = price*number;//商品小计
+
+				tds[6].innerHTML = subtotal;//商品写到单元格里
+			}//for循环的结束符
+
+			//将计算好的总金额和积分放到节点内
+			document.getElementById("total").innerHTML = total;
+			document.getElementById("integral").innerHTML = intergral;
+		}//判断有商品的结束符
+	}//函数的结束符
+	productCount();
+			//删除一行
+		for(i = 0;i<deltd.length;i++){
+			deltd[i].onclick = function(){
+				//parentNode获取当前元素父节点
+				//也就是这个shan获取到的是当前父级的父级也就是trproduct
+				//rowIndex 返回要查询的那行在第几行
+				var shan = this.parentNode.parentNode.rowIndex;
+				// console.log(shan)
+				document.getElementById("shopping").deleteRow(shan);
+				document.getElementById("shopping").deleteRow(shan-1);
+				productCount();
+			}
+		}
+</script>
+</html>
